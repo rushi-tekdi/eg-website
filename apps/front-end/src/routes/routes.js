@@ -1,4 +1,5 @@
 import React, { lazy } from "react";
+import BeneficiaryRegister from "v2/views/Beneficiary/BeneficiaryRegister/BeneficiaryRegister";
 //v2 code
 //online_facilitator_onboarding
 const FacilitatorRegister = lazy(() =>
@@ -352,5 +353,10 @@ export default [
     component: FacilitatorOnboarding,
   },
   { path: "/profile/edit/:step/:photoNo", component: FacilitatorOnboarding },
+  //new facilitator registration
+  {
+    path: "/v2/beneficiary",
+    component: BeneficiaryRegister,
+  },
   //end v2 code
 ];
